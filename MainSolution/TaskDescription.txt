@@ -1,0 +1,20 @@
+This task is to determine your existing programming and testing skills. It consists of several small points.
+
+DO NOT CHANGE EXISTING CODE IN SOLUTION!
+
+Use nUnit Testing Framework (the latest version). 
+Set test names according to any popular test naming convention.
+Tests should be grouped in different categories or classes. Use Initialize/CleanUp annotations if required. 
+
+1. Clone this repository on your local machine or github account.
+2. Open this project via Visual Studio. Review Shop Model and UI (includes just simple realization how classes from Shop Model are working) projects.
+Make sure that you understand this code.
+3. Create a new branch where you will work.
+4. Add a new Unit Test project to this Solution (in Tests folder).
+5. Develop the following unit tests in just created project:
+	- Test for ShoppingCart class;
+	- Test for ValueCalculator class;
+	- Test for Discount_1 class;
+	- Test for Discount_5 class;
+	- Tests for Product class. Determine by yourself, how many tests should be created.
+6. Commit and Push your changes to remote repositiry of your github account. Create Pull Request.
