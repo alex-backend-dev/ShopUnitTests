@@ -21,7 +21,7 @@ namespace ShopModelUnitTests
         [Test]
         public void Equals_CorrectEquals_ExpectedFalse()
         {
-            _product1 = new Product() { Name = "Milk", Price = 100, ProductID = 2 };
+            _product1  = new Product() { Name = "Milk", Price = 100, ProductID = 2 };
             _product2 = new Product() { Name = "Butter", Price = 50, ProductID = 3 };
 
             Assert.IsFalse(_product1 == _product2);
