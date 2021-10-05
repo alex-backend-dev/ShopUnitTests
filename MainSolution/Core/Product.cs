@@ -36,7 +36,7 @@ namespace Core
             return hashCode;
         }
 
-        public static bool operator ==(Product leftProduct, Product rightProduct) => leftProduct != null && (leftProduct.Equals(rightProduct));
+        public static bool operator ==(Product leftProduct, Product rightProduct) => /*leftProduct != null &&*/ (leftProduct.Equals(rightProduct));
 
         public static bool operator !=(Product leftProduct, Product rightProduct) => !(leftProduct == rightProduct);
     }
