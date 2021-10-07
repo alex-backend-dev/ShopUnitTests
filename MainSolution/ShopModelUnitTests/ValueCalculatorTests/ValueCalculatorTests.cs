@@ -1,6 +1,5 @@
 ﻿using Core;
 using NUnit.Framework;
-using System.Collections;
 using System.Collections.Generic;
 
 namespace ShopModelUnitTests
@@ -25,12 +24,23 @@ namespace ShopModelUnitTests
         }
 
         [Test]
+        [Description("Validate correct behaviour of ValueCalc method")]
         public void ValueCalc_Calculate_ExpectedCorrectNumber()
         {
-            decimal actualResult = 60;
+            decimal actualResult = 60M;
             var expectedResult = _valueCalculator?.ValueCalc(_products);
 
             Assert.AreEqual(expectedResult, actualResult);
+        }
+
+        [Test]
+        [Description("Validate incorrect behaviour of ValueCalc method")]
+        public void ValueCalc_Calculate_ExpectedInCorrectNumber()
+        {
+            decimal actualResult = 59M;
+            var expectedResult = _valueCalculator?.ValueCalc(_products);
+
+            Assert.AreNotEqual(expectedResult, actualResult);
         }
     }
 }
